@@ -13,7 +13,16 @@ class Clock extends Component {
 
     render() {
         return (
-            <div></div>
+            <div>
+                <div className="widget__header">
+                    <span>
+                        <span className="widget__header__subject">{this.props.title}</span>
+                    </span>
+                    <span className="widget__header__count"></span>
+                </div>
+                <div className="widget__body">
+                </div>
+            </div>
         );
     }
 }
@@ -21,11 +30,6 @@ class Clock extends Component {
 Clock.displayName = 'Clock';
 
 Clock.propTypes = {
-    title:    PropTypes.string,
-    info:     PropTypes.string,
-    timezone: PropTypes.string,
-    sunRise:  PropTypes.string.isRequired,
-    sunSet:   PropTypes.string.isRequired
 };
 
 
